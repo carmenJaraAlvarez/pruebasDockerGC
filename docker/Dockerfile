@@ -22,6 +22,4 @@ RUN pip install -r requirements.txt
 WORKDIR /app/decide
 ADD docker-settings.py /app/decide/local_settings.py
 RUN ./manage.py collectstatic
-RUN ./manage.py makemessages -l es
-RUN ./manage.py makemessages -l ca
 RUN ./manage.py compilemessages
