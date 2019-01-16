@@ -1,5 +1,5 @@
 from python:alpine
-
+RUN apk add update
 RUN apk add --no-cache git postgresql-dev gcc libc-dev gettext libgettextpo-dev
 RUN apk add --no-cache gcc g++ make libffi-dev python3-dev build-base jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev
 
